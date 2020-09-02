@@ -1,0 +1,185 @@
+<!--
+
+  Built for the Pluralsight Course for new Web Developers
+
+ -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Farzaneh Bordbar</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div>
+      <div id="Icon" class="container">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <header class="row">
+        <span class="replies colomn No10">My Web Page</span>
+        <span class="comment colomn No10">Welcome!</span>
+        <!--p class="colomn No10">My web page</p-->
+      </header>
+      <header class="row">
+        <!--div class="row No5 scroll"-->
+        <!--a onclick="myFunction('home')" class="colomn No1 TabletNo2 mobile">
+            Home</a
+          -->
+        <div class="btn-group row No6 scroll">
+          <button
+            onclick="myFunction('home')"
+            class="button colomn No1 TabletNo2 mobile"
+          >
+            Home
+          </button>
+          <button
+            onclick="myFunction('about')"
+            class="button colomn No1 TabletNo2 mobile"
+          >
+            About
+          </button>
+          <button
+            onclick="myFunction('resume')"
+            class="button colomn No1 TabletNo3 mobile"
+          >
+            Resume
+          </button>
+          <button
+            onclick="myFunction('projects')"
+            class="button colomn No1 TabletNo3 mobile"
+          >
+            Project
+          </button>
+          <button
+            onclick="myFunction('contact')"
+            class="button colomn No1 TabletNo3 mobile"
+          >
+            Contact
+          </button>
+        </div>
+        <div id="v" class="vertical-menu">
+          <a href="#" onclick="myFunction('home')">Home</a>
+          <a href="#" onclick="myFunction('about')">About</a>
+          <a href="#" onclick="myFunction('resume')">Resume</a>
+          <a href="#" onclick="myFunction('projects')">Project</a>
+          <a href="#" onclick="myFunction('contact')">Contact</a>
+        </div>
+
+        <form action="POST" class="colomn No3 center">
+          <input type="text" placeholder="Search.." name="search" />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </header>
+      <div class="row center">
+        <div class="colomn No5 center">
+          <img id="img1" src="img/img1.png" class="Img" />
+        </div>
+        <div class="colomn No5 center">
+          <img src="img/img2.png" class="Img" />
+        </div>
+      </div>
+
+      <!--section-->
+      <div class="row">
+        <form id="home" class="colomn No10">
+          <p>Welcome to my home page, my starter project<br />Wish me luck!</p>
+        </form>
+        <form id="about" class="colomn No10">
+          <h1>What I do.</h1>
+          <p>
+            I am a senior hardware design engineer and embedded programmer with
+            more than six years of experience in the field of design, test and
+            development of embedded systems. I am currently looking for job
+            opportunities in the field of software development and design in
+            order to expand my skill set, challenge my capabilities and widen my
+            career options.
+          </p>
+        </form>
+        <form id="resume"  class="colomn No10">
+          <h1>Resume.</h1>
+
+          <input type="radio" id="conf" name="paper" />
+          <label for="conf"> Conferance Papers</label>
+          <input type="radio" id="jrnl" name="paper" />
+          <label for="conf"> Journal Papers </label>
+          <div>
+            <input id="paperYrIn" type="text" placeholder="Search.." />
+            <button id="paperSrch" type="button">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </form>
+
+        <form id="projects" class="colomn No10">
+          <h1>Projects.</h1>
+          <div>
+            <input id="projectYrIn" type="text" placeholder="Search.." />
+            <button id="projectSrch" type="button">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </form>
+
+        <form id="contact" class="colomn No10">
+          <h1>Contact me.</h1>
+          <address id="Addr">
+            <a href="mailto:fbordbar90@gmail.com">fbordbar90@gmail.com</a
+            >.<br />
+            No. 434, Rafieipour Alley, <br />
+            Iran, Rasht, Taleqani St. <br />
+            +989171357814
+          </address>
+        </form>
+      </div>
+
+      <div class="row">
+        <footer class="colomn No10 icon-bar">
+          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="google"><i class="fa fa-google"></i></a>
+          <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+          <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+        </footer>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/js.js"></script>
+  </body>
+</html>
+
+<!--DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+  <body>
+    <!div class="row">
+      <div class="colomn No2">colomn2</div>
+      <div class="colomn No2">colomn2</div>
+      <div class="colomn No2">colomn2</div>
+      <div class="colomn No2">colomn2</div>
+      <div class="colomn No2">colomn2</div>
+    </div>
+    <div class="row">
+      <div class="colomn No2">colomn2</div>
+      <div class="colomn No4">colomn4</div>
+      <div class="colomn No4">.colomn4</div>
+    </div>
+    <div class="row">
+      <div class="colomn No5">.colomn5</div>
+      <div class="colomn No5">.colomn5</div>
+    </div>
+
+    <div class="row">
+      <div class="colomn No6">.colomn6</div>
+      <div class="colomn No4">.colomn4</div>
+    </div>
+  </body>
+</html-->
